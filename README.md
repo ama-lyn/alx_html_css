@@ -1,10 +1,12 @@
 ALX HTML BASICS 
 
 Travel Tip Website
+
 Welcome to the Travel Tip Website repository! This website is designed to provide valuable travel tips, advice, and recommendations to help fellow travelers make the most out of their journeys.
 
 
 FEATURES TO BE CONSIDERED
+
 Comprehensive collection of travel tips covering various aspects such as planning, packing, accommodation, transportation, and more.
 
 User-friendly interface with easy navigation to access different categories and browse through the tips effortlessly.
@@ -24,6 +26,7 @@ We extend our gratitude to the open-source community for their valuable contribu
 
 
 CONTACT 
+
 If you have any questions, feedback, or inquiries, please feel free to reach out to us at gwen.amalyn@gmail.com
 
 Thank you for visiting the Travel Tip Website repository. Happy travels!
