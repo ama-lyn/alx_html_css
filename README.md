@@ -1,6 +1,6 @@
 # alx_html_css
 
-This project aims to showcase HTML and CSS skills through the completion of various tasks. It consists of two files: `Html_basics` and `html_advanced`. Each file focuses on different levels of HTML and CSS proficiency.
+This project aims to showcase HTML and CSS skills through the completion of various tasks in the ALX Introduction to Software Engineering programme . It consists of two files: `Html_basics` and `html_advanced`. Each file focuses on different levels of HTML and CSS proficiency.
 
 ## File: html_basics
 
