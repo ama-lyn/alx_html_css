@@ -4,6 +4,6 @@ This repository contains the implementation of a webpage from a designer file. T
 
 IMPLEMENTATION
 
-For this initial project, your main focus is on creating the HTML structure. CSS and styling are not required at this stage. The objective is to build a semantically correct HTML structure that accurately represents the design provided in the designer file.
+For this initial project, my main focus is on creating the HTML structure. CSS and styling are not required at this stage. The objective is to build a semantically correct HTML structure that accurately represents the design provided in the designer file.
 
 Completing this project will enhance my skills in implementing webpages based on designer files. By focusing on the HTML structure and adhering to semantic standards, I will strengthen my foundation for future projects involving CSS and styling.
