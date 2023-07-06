@@ -1,0 +1,49 @@
+body, main {
+    display: flex
+    
+}
+body {
+    flex-direction: column;
+  }
+  
+  main {
+    flex-direction: row;
+  }
+  
+  main {
+    flex: auto;
+  }
+  
+  article {
+    flex: 2;
+    overflow-y: auto;
+  }
+  
+  aside {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  body {
+    background-image: url("file:///C:/Users/gwen/Documents/GitHub/alx_html_css/images/white_painted_wall.webp");
+    background-size: cover;
+    background-position: center;
+  }  
+
