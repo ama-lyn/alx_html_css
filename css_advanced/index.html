@@ -4,204 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html_advanced</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <div>
-            <a href="#">
-                <img src="#" alt="LOGO" style="width:42px;height:42px;">
-                </a>
-        </div>
-        <nav>
-            <a href="#">COURSES</a>
-            <a href="#">PRICING</a>
-            <a href="#">LOGIN</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Get Schooled</h2>
-            <p>Smiles</p>
-            <p>Grin</p>
-            <p>Laugh</p>
-            <button>REGISTER FOR FREE</button>
-            
+    <!– Header Section –>
+    <header class="header">
+        <div class="header-container">
             <div>
-                <h3>Learn from the pros</h3>
+              <a href="#">
+                  <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/logo.png" alt="LOGO">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="#"><strong>COURSES</strong></a>
+                <a href="#"><strong>PRICING</strong></a>
+                <a href="#"><strong>LOGIN</strong></a>
+             </nav>
+            </div>
+            <!– Hero Section –>
+            <section class="hero">
+                <h2 class="hero-title"><strong>Get Schooled</strong></h2>
+                <div class="words">
+                    <p><strong>SMILES</strong></p>
+                    <p><strong>GRIN</strong></p>
+                    <p><strong>LAUGH</strong></p>
+                </div>
+                <button class="button"> <strong style=line-height:5px;>REGISTER FOR FREE</strong></button>
+            
+                <div class="learn-from-pros">
+                   <h3><strong class="learn">Learn</strong> from the pros</h3>
 
-                <div>
-                    <img src="#" alt="Profile">
-                    <h4>Name</h4>
-                    <p>Sub-Title</p>
+                <div class="profile">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/1.png" alt="Profile">
+                    <h4>Phillip Massey</h4>
+                    <p><em>« Smile of the year » <br>2018 - 2019</em></p>
                 </div>
 
-                <div>
-                    <img src="#" alt="Profile">
-                    <h4>Name</h4>
-                    <p>Sub-Title</p>
+                <div class="profile">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/3.png" alt="Profile">
+                    <h4>Nannie Lawrence</h4>
+                    <p><em>Best « little smile » <br>2017</em></p>
                 </div>
 
-                <div>
-                    <img src="#" alt="Profile">
-                    <h4>Name</h4>
-                    <p>Sub-Title</p>
+                <div class="profile">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/2.png" alt="Profile">
+                    <h4>Bruce Walters</h4>
+                    <p><em>Best « Friend Smile » <br>live performance 2019</em></p>
                 </div>
 
-                <div>
-                    <img src="#" alt="Profile">
-                    <h4>Name</h4>
-                    <p>Sub-Title</p>
+                <div class="profile">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/4.png" alt="Profile">
+                    <h4>Henry Hughes</h4>
+                    <p><em>« 24h smiles » winner <br>2016 - 2019</em></p>
                 </div>
             </div>
         </section>
+    </header>
+    <main>
 
-        <section>
-            <div>
-                <img src="#" alt="Quote image">
-                <div>
+        <!– Quote Section –>
+        <section class="quote">
+            <div class="quote-content">
+                <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/5.png" alt="Quote image">
+                <div class="quote-text">
                 <blockquote>
-                    <p>Those tutorials are concise and go straight to the point. I can't think of a
-                        better place to learn smiling.And its so fun!
+                    <p>« Those tutorials are concise and go straight to the point. 
+                        I can’t think of a better <br> place to learn smiling. And it’s so fun!
                     </p>
                 </blockquote>
-                <p>Person name</p>
+                <br>
+                <p class="person"><strong>Person name</strong></p>
                 <p>weather presenter</p>
                 </div>
             </div>    
         </section>
-
+        <!– Tutorials –>
         <section>
-            <h3>Most popular tutorials</h3>
-            <div>
-                <div>
-                    <img src="#" alt="Video 1">
-                    <h4>Diagonal Smile</h4>
-                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                    <div>
-                        <img src="#" alt="Profile">
-                        <h5>Phillip Massey</h5>
+            <h3 class="most-popular">Most  <strong style=color:#C271FF;>popular</strong>  tutorials</h3>
+            <div id=tutorials>
+                <div class="tutorial">
+                    <div class="video">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/9.png" alt="Video 1">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/play.png" alt="play">
                     </div>
-                    <div>
-                        <div>
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
+                    <div class="tutorial-details">
+                        <h4 class="detail" id="h4">Diagonal Smile</h4>
+                    <p class="detail" id="p">Lorem ipsum dolor sit amet, consect <br> adipiscing elit, sed do eiusmod.</p>
+                    <div class="profile2">
+                        <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/1.png" alt="Profile">
+                        <h5 style=color:#C271FF;>Phillip Massey</h5>
+                    </div>
+                    <div class="rating">
+                        <div >
+                            <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/rating.png" alt="Star">
+                            
                         </div>
-                        <p>8 min</p>
+                        <p style=color:#C271FF;font-size:13px;>8 min</p>
                     </div>
+                    </div>
+        
+                </div>
+            
+
+            
+                <div class="tutorial">
+                    <div class="video">
+                      <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/7.png" alt="Video 2">
+                      <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/play.png" alt="play">
+                    </div>
+                    <div class="tutorial-details">
+                        <h4 class="detail" id="h4">Sad Smile</h4>
+                    <p class="detail" id="p">Lorem ipsum dolor sit amet, consect <br> adipiscing elit, sed do eiusmod.</p>
+                    <div class="profile2">
+                        <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/1.png" alt="Profile">
+                        <h5 style=color:#C271FF;>Phillip Massey</h5>
+                    </div>
+                    <div class="rating">
+                        <div >
+                            <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/rating.png" alt="Star">
+                            
+                        </div>
+                        <p style=color:#C271FF;font-size:13px;>8 min</p>
+                    </div>
+                    </div>
+                    
 
                 </div>
-            </div>
+           
 
-            <div>
-                <div>
-                    <img src="#" alt="Video 2">
-                    <h4>Sad Smile</h4>
-                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                    <div>
-                        <img src="#" alt="Profile">
-                        <h5>Phillip Massey</h5>
+           
+                <div class="tutorial">
+                    <div class="video">
+                      <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/8.png" alt="Video 3">
+                      <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/play.png" alt="play">
                     </div>
-                    <div>
-                        <div>
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
+                    <div class="tutorial-details">
+                        <h4 class="detail" id="h4">Natural smile</h4>
+                    <p class="detail" id="p">Lorem ipsum dolor sit amet, consect <br> adipiscing elit, sed do eiusmod.</p>
+                    <div class="profile2">
+                        <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/1.png" alt="Profile">
+                        <h5 style=color:#C271FF;>Phillip Massey</h5>
+                    </div>
+                    <div class="rating">
+                        <div >
+                            <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/rating.png" alt="Star">
+                            
                         </div>
-                        <p>8 min</p>
+                        <p style=color:#C271FF;font-size:13px;>8 mins</p>
                     </div>
-
+                    </div>
+          
                 </div>
-            </div>
+            
 
-            <div>
-                <div>
-                    <img src="#" alt="Video 3">
-                    <h4>Natural smile</h4>
-                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                    <div>
-                        <img src="#" alt="Profile">
-                        <h5>Phillip Massey</h5>
+            
+                <div class="tutorial">
+                    <div class="video">
+                      <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/6.png" alt="Video 4">
+                      <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/play.png" alt="play">
                     </div>
-                    <div>
-                        <div>
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
+                    <div class="tutorial-details">
+                        <h4 class="detail" id="h4">Happy Smile</h4>
+                    <p class="detail" id="p">Lorem ipsum dolor sit amet, consect <br> adipiscing elit, sed do eiusmod.</p>
+                    
+                    <div class="profile2">
+                        <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/1.png" alt="Profile">
+                        <h5 style=color:#C271FF;>Phillip Massey</h5>
+                    </div>
+                    <div class="rating">
+                        <div >
+                            <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/rating.png" alt="Star">
                         </div>
-                        <p>8 mins</p>
+                        <p style=color:#C271FF;font-size:13px;>8 mins</p>
                     </div>
-
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <img src="#" alt="Video 3">
-                    <h4>Happy Smile</h4>
-                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                    <div>
-                        <img src="#" alt="Profile">
-                        <h5>Phillip Massey</h5>
                     </div>
-                    <div>
-                        <div>
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                            <img src="#" alt="Star">
-                        </div>
-                        <p>8 mins</p>
-                    </div>
-
+         
                 </div>
             </div>
         </section>
         <!--End of video section-->
-        <section>
-            <h3>Free Membership</h3>
+
+        <!– Membership –>
+        <section class="membership">
+            <h3> <strong style=color:#C271FF;>Free</strong> Membership</h3>
             <div>
-                <div>
-                    <img src="#" alt="Photo">
+                <div class="member">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/smile.png" alt="Photo">
                     <h4>Lorem ipsum</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p style="color: grey;font-size:12px;">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
                 </div>
 
-                <div>
-                    <img src="#" alt="Photo">
+                <div class="member">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/smile.png" alt="Photo">
                     <h4>Lorem ipsum</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p style="color: grey;font-size:12px;">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
                 </div>
 
-                <div>
-                    <img src="#" alt="Photo">
+                <div class="member">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/smile.png" alt="Photo">
                     <h4>Lorem ipsum</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p style="color: grey;font-size:12px;">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                 </div>
 
-                <div>
-                    <img src="#" alt="Photo">
+                <div class="member">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/smile.png" alt="Photo">
                     <h4>Lorem ipsum</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p style="color: grey;font-size:12px;">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
                 </div>
             </div>
-            <button>Register for free</button>
+            <button class="button"> <strong style=line-height:5px;>REGISTER FOR FREE</strong></button>
         </section>
 
-        <section>
-            <h2>F.A. Q.</h2>
-            <div>
-                <div> 
-                    <div>
-                        <h3>How does this work?</h3>
-                        <p>
+        <!– F.A.Q –>
+        <section class="faq">
+            <h2 class="faq-title">F.A. Q.</h2>
+            <div class="faq-container">
+                <div class="faq-row">
+                    <div class="faq-item">
+                        <h3 id="h3">How does this work?</h3>
+                        <p id="t">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -212,9 +234,9 @@
                             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                     </div>  
-                    <div>
-                        <h3>How does this work?</h3>
-                        <p>
+                    <div class="faq-item">
+                        <h3 id="h3">How does this work?</h3>
+                        <p id="t">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -226,10 +248,10 @@
                         </p>
                     </div> 
                 </div>
-                <div> 
-                    <div>
-                        <h3>How does this work?</h3>
-                        <p>
+                <div class="faq-row">
+                    <div class="faq-item">
+                        <h3 id="h3">How does this work?</h3>
+                        <p id="t">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -240,9 +262,9 @@
                             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div> 
-                    <div>
-                        <h3>How does this work?</h3>
-                        <p>
+                    <div class="faq-item">
+                        <h3 id="h3">How does this work?</h3>
+                        <p id="t">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -257,26 +279,28 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section>
-            <div>
-                <div>
-                    <img src="#" alt="Footer LOGO">
-                    <div>
-                        <a href="#">
-                            <img src="#" alt="Image 1" style="width:42px;height:42px;">
-                            </a>
-                        <a href="#">
-                            <img src="#" alt="Image 2" style="width:42px;height:42px;">
-                            </a>
-                         <a href="#">
-                            <img src="#" alt="Image 3" style="width:42px;height:42px;">
-                            </a>
-                    </div>
+
+    <footer class="footer">
+        <!– Footer Section –>
+        <section class="footer-container">
+            
+                <div class="bottom-logo">
+                    <a href="#">
+                    <img src="file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/logo.png" alt="Footer LOGO">
+                    </a>
                 </div>
-                <p>&copy;smileschool 2020</p>
-            </div>
-        </section>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+        </section>            
+                
+                <div class="footer-bottom">
+                   <p>&copy;smileschool 2020</p>
+                </div>
+            
+        
     </footer>
 </body>
 </html>
