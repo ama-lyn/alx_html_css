@@ -1,363 +1,343 @@
 /* Variables
    ============================= */
 
-   :root{
-    --color-primary: #C271FF;
-    --color-black:  #090909;
-    --color-white: #ffffff;
-    --background-color: #071629;
+:root {
+  --color-primary: #c271ff;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --background-color: #071629;
 
+  /** FONTS **/
+  --font-family-base: "Source-sans-Pro-Regular";
+  --font-family-title: "Source-sans-Pro-Semibold";
+  --font-family-bold: "Source-sans-Pro-Bold";
 
-    /** FONTS **/
-    --font-family-base: 'Source-sans-Pro-Regular'; 
-    --font-family-title: 'Source-sans-Pro-Semibold'; 
-    --font-family-bold: 'Source-sans-Pro-Bold'; 
- 
-    --font-size-x-small: 1rem; 
-    --font-size-small: 1.2rem; 
-    --font-size-medium: 1.6rem; 
-    --font-size-large: 1.8rem; 
-    --font-size-x-large: 2.3rem; 
-    --font-size-xx-large: 3.2rem; 
-    --font-weight-thin: 100; 
-    --font-weight-regular: 300; 
-    --font-weight-bold: 600; 
+  --font-size-x-small: 1rem;
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 3.2rem;
+  --font-weight-thin: 100;
+  --font-weight-regular: 300;
+  --font-weight-bold: 600;
 
-    --line-height-small: 1.2;
-    --line-height-base: 1.5;
-    --line-height-big: 1.8;
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
 
+  /** MOTION **/
+  --transition-duration: 0.3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
 
- /** MOTION **/
- --transition-duration: .3s;
- --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
-
-
-   }
-
-
-   /* Font import
+/* Font import
       ============================= */
-      @font-face { 
-        font-family: Source-sans-Pro-Bold; 
-        src: url("./fonts/SourceSansPro-Bold.otf"); 
-        font-weight: var(--font-weight-bold); 
-      } 
-      @font-face { 
-        font-family: Source-sans-Pro-Regular; 
-        src: url("./fonts/SourceSansPro-Regular.otf"); 
-        font-weight: var(--font-weight-regular); 
-      } 
-      @font-face { 
-        font-family: Source-sans-Pro-Semibold; 
-        src: url("./fonts/SourceSansPro-Semibold.otf"); 
-        font-weight: var(--font-weight-bold); 
-      } 
+@font-face {
+  font-family: Source-sans-Pro-Bold;
+  src: url("./fonts/SourceSansPro-Bold.otf");
+  font-weight: var(--font-weight-bold);
+}
+@font-face {
+  font-family: Source-sans-Pro-Regular;
+  src: url("./fonts/SourceSansPro-Regular.otf");
+  font-weight: var(--font-weight-regular);
+}
+@font-face {
+  font-family: Source-sans-Pro-Semibold;
+  src: url("./fonts/SourceSansPro-Semibold.otf");
+  font-weight: var(--font-weight-bold);
+}
 
-
-      /* Base
+/* Base
       ============================= */
-      *, *:after, *:before { 
-        box-sizing: border-box; 
-        margin: 0; 
-        padding: 0; 
-      } 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-      body { 
-        width: 100%; 
-        height: 100%; 
-      } 
-
+body {
+  width: 100%;
+  height: 100%;
+}
 
 /* Header
       ============================= */
 
-      .header{
-        background-image: url("file:///C:/Users/gwen/Documents/GitHub/alx_html_css/css_advanced/images/Object.png"); 
-        /*background-size: 1920px 1080px;*/
-        background-repeat: no-repeat; 
-        /*background-position: -575px -100px; */
-        max-block-size: 920px; 
-        min-block-size: 840px; 
-        margin: auto; 
-        padding-bottom: 20px; 
-        color: var(--white); 
-        text-align: center; 
-          }
-       
-    
-    
-    .header-container {
-        display: flex;
-        align-items: center; /* Vertically align logo and navigation */
-        justify-content: space-between; /* Create space between logo and navigation */
-        height: 70px;
-        padding: 10px 30px; /* Add some padding around the header content */
-        
-    }
-    
-    
-    .logo img {
-        margin-right: 20px;
-    }
-    
-    /* Navigation Menu */
-    .nav-menu a {
-        text-decoration: none;
-        color: var(--color-white);
-        margin-left: 20px; 
-        font-family: var(--font-family-bold);
-        font-size: 16px;
-    }
-    
-    
-    .nav-menu a:hover {
-        color: var(--color-primary);
-    }
+.header {
+  background-image: url("../images/Object.png");
+  /*background-size: 1920px 1080px;*/
+  background-repeat: no-repeat;
+  /*background-position: -575px -100px; */
+  max-block-size: 920px;
+  min-block-size: 840px;
+  margin: auto;
+  padding-bottom: 20px;
+  color: var(--white);
+  text-align: center;
+}
 
+.header-container {
+  display: flex;
+  align-items: center; /* Vertically align logo and navigation */
+  justify-content: space-between; /* Create space between logo and navigation */
+  height: 70px;
+  padding: 10px 30px; /* Add some padding around the header content */
+}
 
-     /* Hero section 
+.logo img {
+  margin-right: 20px;
+}
+
+/* Navigation Menu */
+.nav-menu a {
+  text-decoration: none;
+  color: var(--color-white);
+  margin-left: 20px;
+  font-family: var(--font-family-bold);
+  font-size: 16px;
+}
+
+.nav-menu a:hover {
+  color: var(--color-primary);
+}
+
+/* Hero section 
       ============================= */
 
-      
-      
-      .hero-title {
-        font-size: 100px;
-        margin-top: 90px;
-        margin-bottom: .2rem;
-        color: var(--color-white);
-        font-family: var(--font-family-bold);
-        
-      }
-      
-      .words {
-        display: flex;
-        justify-content: center;
-        font-family: var(--font-family-bold);
-        margin-bottom: 20px; 
-      }
-      
-      .words p {
-        font-size: var(--font-size-x-small);
-        color: var(--color-white);
-        margin: 0 10px;
-      }
-      
-      .button {
-        padding: 9px 18px;
-        background-color: var(--color-primary);
-        color: var(--color-white);
-        font-size:16px;
-        border: none;
-        border-radius: 22px;
-        cursor: pointer;
-        margin-bottom: 60px;
-        margin-top: 15px;
-        
-      }
-      
-      /* Learn from the Pros Section */
-      .learn-from-pros {
-        text-align: center; 
-        padding: 40px 0; 
-      }
-      .learn{
-        color: var(--color-primary);
-      }
-      
-      h3 {
-        font-size: 2rem;
-        margin-bottom: 50px;
-        color: var(--color-white);
-      }
-      
-      .profile {
-        display: inline-block; 
-        margin: 0 50px; 
-        text-align: center; 
-      }
-      
-      .profile img {
-        width: 150px; 
-        height: 150px; 
-        border-radius: 50%;
-        margin-bottom: 10px;
-      }
-      
-      h4 {
-        font-size: 1.2rem;
-        margin-bottom: 5px;
-        color: var(--color-white);
-      }
-      
-      p {
-        font-size: 10px;
-        color: var(--color-white);
-      }
-      
+.hero-title {
+  font-size: 100px;
+  margin-top: 90px;
+  margin-bottom: 0.2rem;
+  color: var(--color-white);
+  font-family: var(--font-family-bold);
+}
 
-      /* QUOTE Section
+.words {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family-bold);
+  margin-bottom: 20px;
+}
+
+.words p {
+  font-size: var(--font-size-x-small);
+  color: var(--color-white);
+  margin: 0 10px;
+}
+
+.button {
+  padding: 9px 18px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 16px;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  margin-top: 15px;
+}
+
+/* Learn from the Pros Section */
+.learn-from-pros {
+  text-align: center;
+  padding: 40px 0;
+}
+.learn {
+  color: var(--color-primary);
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: var(--color-white);
+}
+
+.profile {
+  display: inline-block;
+  margin: 0 50px;
+  text-align: center;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: var(--color-white);
+}
+
+p {
+  font-size: 10px;
+  color: var(--color-white);
+}
+
+/* QUOTE Section
       ============================= */
-      .quote{
-        position: relative; 
-        block-size: 350px; 
-        background: var(--color-primary); 
-        
-      }
-       
+.quote {
+  position: relative;
+  block-size: 350px;
+  background: var(--color-primary);
+}
 
 /* Quote Content (Image and Text Side by Side) */
-      .quote-content {
-        display: flex; /* Use flexbox to display the image and text side by side */
-      }
+.quote-content {
+  display: flex; /* Use flexbox to display the image and text side by side */
+}
 
 /* Image in the Quote Section */
-    .quote-content img {
-      width: 150px; /* Adjust the image width as needed */
-      height: 150px; /* Adjust the image height as needed */
-      margin-right: 20px; /* Add spacing between the image and text */
-      margin-left: 200px;
-      margin-top: 80px;
-    }
+.quote-content img {
+  width: 150px; /* Adjust the image width as needed */
+  height: 150px; /* Adjust the image height as needed */
+  margin-right: 20px; /* Add spacing between the image and text */
+  margin-left: 200px;
+  margin-top: 80px;
+}
 
 /* Quote Text */
-    .quote-text {
-      flex: 1; /* Let the text occupy the available space */
-    }
+.quote-text {
+  flex: 1; /* Let the text occupy the available space */
+}
 
-    blockquote {
-      font-size: 22px;
-      font-style: italic;
-      margin-top: 80px;
-    }
+blockquote {
+  font-size: 22px;
+  font-style: italic;
+  margin-top: 80px;
+}
 
-    .quote-text p {
-      font-size: 1rem;
-      margin: 5px 0;
-      font-size: 22px;
-    }
+.quote-text p {
+  font-size: 1rem;
+  margin: 5px 0;
+  font-size: 22px;
+}
 
-     /* TUTORIAL Section
+/* TUTORIAL Section
       ============================= */
-    /* Most Popular Tutorials Section */
-      #tutorials {
-        margin-top: 60px;
-        display: flex;
-        margin-left: 80px; 
-        margin-bottom: 60px;
-      }
+/* Most Popular Tutorials Section */
+#tutorials {
+  margin-top: 60px;
+  display: flex;
+  margin-left: 80px;
+  margin-bottom: 60px;
+}
 
-      .tutorial{
-        margin-right: 30px;
-      }
+.tutorial {
+  margin-right: 30px;
+}
 
-      .most-popular {
-        text-align: center;
-        margin-bottom: 20px;
-       color: var(--color-black);
-       margin-top: 60px;
-      }
+.most-popular {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--color-black);
+  margin-top: 60px;
+}
 
+/* Video Section */
+.video {
+  position: relative;
+  margin-right: 20px;
+}
 
-      /* Video Section */
-      .video {
-        position: relative; 
-        margin-right: 20px; 
-      }
+.video img {
+  width: 200px;
+  height: 120px;
+  margin-bottom: 10px;
+}
 
-      .video img {
-        width: 200px;
-        height: 120px; 
-        margin-bottom: 10px ;
-      }
+.video img:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+}
 
-      .video img:last-child {
-        position: absolute; 
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        width: 64px;
-        height: 64px;
-      }
+/* Tutorial Details */
+.tutorial-details {
+  flex: 1; /* Let the tutorial details occupy the available space */
+}
 
-      /* Tutorial Details */
-      .tutorial-details {
-        flex: 1; /* Let the tutorial details occupy the available space */
-        
-      }
+.detail {
+  color: var(--color-black);
+}
 
-      .detail{
-        color: var(--color-black);
-      }
+#h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  /*color: var(--color-black);*/
+}
 
-      #h4 {
-        font-size: 16px;
-        margin-bottom: 10px;
-        /*color: var(--color-black);*/
-      }
+/* Break Text in Paragraph Section */
+#p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  white-space: pre-wrap; /* Allow text to break and wrap within paragraphs */
+  color: grey;
+}
 
-      /* Break Text in Paragraph Section */
-      #p {
-        font-size: 13px;
-        margin-bottom: 10px;
-        white-space: pre-wrap; /* Allow text to break and wrap within paragraphs */
-        color: grey;
-      }
+/* Profile Section */
+.profile2 {
+  display: flex; /* Display the profile elements side by side horizontally */
+  /*justify-content: center; /* Center the profile elements vertically */
+  margin-bottom: 5px;
+}
 
-      /* Profile Section */
-      .profile2 {
-        display: flex; /* Display the profile elements side by side horizontally */
-        /*justify-content: center; /* Center the profile elements vertically */
-        margin-bottom: 5px;
-      }
+.profile2 img {
+  width: 30px; /* Adjust the profile image width as needed */
+  height: 30px; /* Adjust the profile image height as needed */
+  border-radius: 50%;
+  margin-right: 10px; /* Add spacing between the profile image and name */
+}
 
-      .profile2 img {
-        width: 30px; /* Adjust the profile image width as needed */
-        height: 30px; /* Adjust the profile image height as needed */
-        border-radius: 50%;
-        margin-right: 10px; /* Add spacing between the profile image and name */
-      }
+h5 {
+  font-size: 1rem;
+  margin: 0;
+}
 
-      h5 {
-        font-size: 1rem;
-        margin: 0;
-      }
+/* Rating Section */
+.rating {
+  display: flex; /* Display the rating elements side by side horizontally */
+  align-items: center; /* Center the rating elements vertically */
+}
 
-      /* Rating Section */
-      .rating {
-        display: flex; /* Display the rating elements side by side horizontally */
-        align-items: center; /* Center the rating elements vertically */
-      }
+.rating div {
+  margin-right: 5px; /* Add spacing between the star and duration */
+}
 
-      .rating div {
-        margin-right: 5px; /* Add spacing between the star and duration */
-      }
-
-      /* TUTORIAL Section
+/* TUTORIAL Section
       ============================= */
 
-      .membership {
-        text-align: center; 
-        padding: 40px 0; 
-        background: var(--background-color);
-      }
-           
-      .member {
-        display: inline-block; 
-        margin: 0 50px; 
-        text-align: center;
-        margin-bottom: 30px; 
-      }
-      
-      .member img {
-        width: 40px; 
-        height: 30px;
-        margin-bottom: 10px;
-      }
+.membership {
+  text-align: center;
+  padding: 40px 0;
+  background: var(--background-color);
+}
 
-      /* F.A.Q Section
+.member {
+  display: inline-block;
+  margin: 0 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.member img {
+  width: 40px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+/* F.A.Q Section
       ============================= */
-     /* F.A.Q. Section */
+/* F.A.Q. Section */
 .faq {
   text-align: center; /* Center the content within the section */
   padding: 20px; /* Add some padding around the section content */
@@ -369,7 +349,7 @@
 }
 
 /* F.A.Q. Container */
-.faq-row{
+.faq-row {
   display: flex;
   margin-left: 100px;
   justify-content: space-around;
@@ -391,57 +371,52 @@
   color: var(--color-black);
 }
 
-
-
 /* Footer Section
       ============================= */
 
-      .footer{
-        position: relative; 
-        block-size: 240px; 
-        background: var(--background-color); 
-        
-      }
+.footer {
+  position: relative;
+  block-size: 240px;
+  background: var(--background-color);
+}
 
-      .bottom-logo{
-        display: inline; 
-        justify-content: space-between; 
-      }
-     .bottom-logo img{
-      margin: 40px auto; 
-     }
+.bottom-logo {
+  display: inline;
+  justify-content: space-between;
+}
+.bottom-logo img {
+  margin: 40px auto;
+}
 
-     .social-icons{
-      margin: 40px auto; 
-      display: inline; 
-      float: right; 
-      justify-content: space-between; 
-     }
+.social-icons {
+  margin: 40px auto;
+  display: inline;
+  float: right;
+  justify-content: space-between;
+}
 
-      .social-icons a{
-        padding: 10px;
-        text-decoration: none;
-    
-      }
-      .social-icons i{
-        font-size: 2em;
-        color: var(--color-white);
-     }
+.social-icons a {
+  padding: 10px;
+  text-decoration: none;
+}
+.social-icons i {
+  font-size: 2em;
+  color: var(--color-white);
+}
 
-     .footer-bottom{
-        padding: 20px;
-        text-align:center;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        
-     }
+.footer-bottom {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 
-     .footer-bottom p{
-      font-family: var(--font-family-base); 
-      font-weight: var(--font-weight-thin);
-      color: var(--color-white); 
-      mix-blend-mode: normal; 
-      opacity: 0.2; 
-      font-size: 15px;
-     }
+.footer-bottom p {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-thin);
+  color: var(--color-white);
+  mix-blend-mode: normal;
+  opacity: 0.2;
+  font-size: 15px;
+}
